@@ -1,6 +1,6 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Reader;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Reader;
 
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use \PhpOffice\PhpSpreadsheet\Cell\Hyperlink;
@@ -10,7 +10,7 @@ use \PhpOffice\PhpSpreadsheet\Reader\BaseReader;
 use \PhpOffice\PhpSpreadsheet\Reader\DefaultReadFilter;
 // use \PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 //use \PhpOffice\PhpSpreadsheet\Reader\Xlsx\Chart;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts\ChartReader;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Charts\ChartReader;
 
 //require_once __DIR__ . "/Charts/Chart.php";
 require_once __DIR__ . "/Charts/ChartReader.php";
@@ -26,7 +26,7 @@ use \PhpOffice\PhpSpreadsheet\Shared\File;
 use \PhpOffice\PhpSpreadsheet\Shared\Font;
 use \PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 // use \PhpOffice\PhpSpreadsheet\Spreadsheet;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Spreadsheet;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Spreadsheet;
 use \PhpOffice\PhpSpreadsheet\Style\Border;
 use \PhpOffice\PhpSpreadsheet\Style\Borders;
 use \PhpOffice\PhpSpreadsheet\Style\Color;
@@ -41,9 +41,9 @@ use \SimpleXMLElement;
 use \XMLReader;
 use \ZipArchive;
 use \XBRL;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinitions;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecordsCollection;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinitions;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecordsCollection;
 use PhpOffice\PhpSpreadsheet\Style\Supervisor;
 
 require_once __DIR__ . "/Spreadsheet.php";

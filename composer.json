@@ -27,7 +27,7 @@
 		"ext-libxml": "*",
 		"ext-xml": "*",
 		"lib-libxml": "*",
-		"phpoffice/phpspreadsheet": ">=1.23",
+		"phpoffice/phpspreadsheet": "1.23.0",
 		"lyquidity/utilities": "dev-master",
 		"lyquidity/xml": "dev-master"
 	},

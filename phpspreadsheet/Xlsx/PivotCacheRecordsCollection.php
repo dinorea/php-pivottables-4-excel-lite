@@ -1,8 +1,8 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx;
 
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
 
 /**
  * A collection of PivotCacheDefinition instances

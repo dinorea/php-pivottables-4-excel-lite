@@ -1,6 +1,6 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx;
 
 /**
  * Class to represent a cache records set

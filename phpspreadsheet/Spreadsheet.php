@@ -1,16 +1,16 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet;
 
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinitionCollection;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecordsCollection;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTableCollection;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinitionCollection;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecordsCollection;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTableCollection;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
 use \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use \PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer\ZipArchiveX;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Writer\ZipArchiveX;
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use \TupleDictionary;
 
@@ -359,7 +359,7 @@ class Spreadsheet extends \PhpOffice\PhpSpreadsheet\Spreadsheet
 	 * @param string $rId The existing reference Id
 	 * @param string $path A normalized path in the Zip file to the existing Xml
 	 * @param string $xml The existing Xml
-	 * @return \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition
+	 * @return \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition
 	 */
 	public function addPivotCacheDefinition( $rId, $path, $xml )
 	{
@@ -374,7 +374,7 @@ class Spreadsheet extends \PhpOffice\PhpSpreadsheet\Spreadsheet
 	 * @param string $path A normalized path in the Zip file to the existing Xml
 	 * @param string $xml The existing Xml
 	 * @param string $cacheDefinitionPath The path to the cache definition that points to this record set
-	 * @return \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords
+	 * @return \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords
 	 */
 	public function addPivotCacheRecords( $rId, $path, $xml, $cacheDefinitionPath = null )
 	{
@@ -395,7 +395,7 @@ class Spreadsheet extends \PhpOffice\PhpSpreadsheet\Spreadsheet
 	 * @param string $xml The existing Xml
 	 * @param string $cacheId The cache id used in workbook.xml
 	 * @param string $sheetName The name of the sheet that refers to this set of records
-	 * @return \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable
+	 * @return \omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable
 	 */
 	public function addPivotTable( $rId, $path, $xml, $cacheId, $sheetName = null )
 	{

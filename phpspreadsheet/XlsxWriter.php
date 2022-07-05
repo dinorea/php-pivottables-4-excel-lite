@@ -1,13 +1,13 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Writer;
 
 use \PhpOffice\PhpSpreadsheet\Calculation\Calculation;
 use \PhpOffice\PhpSpreadsheet\Calculation\Functions;
 use \PhpOffice\PhpSpreadsheet\HashTable;
 use \PhpOffice\PhpSpreadsheet\Shared\File;
 use \PhpOffice\PhpSpreadsheet\Spreadsheet;
-// use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Spreadsheet;
+// use omnisoftory\PhpOffice\PhpSpreadsheet\Spreadsheet;
 use \PhpOffice\PhpSpreadsheet\Worksheet\Drawing as WorksheetDrawing;
 use \PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
 use \PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
@@ -17,7 +17,7 @@ use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\ContentTypes;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\DocProps;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Drawing;
 // use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\RelsRibbon;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\RelsVBA;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\StringTable;
@@ -25,13 +25,13 @@ use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Style;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Theme;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Table;
 // use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
 use \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Worksheet;
 use \ZipArchive;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts\ChartWriter;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Charts\ChartWriter;
 
 require_once __DIR__ . "/Xlsx/Rels.php";
 require_once __DIR__ . "/Spreadsheet.php";

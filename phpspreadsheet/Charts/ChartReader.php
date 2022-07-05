@@ -1,6 +1,6 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Charts;
 require_once __DIR__ . "/Chart.php";
 use SimpleXMLElement;
 
@@ -20,7 +20,7 @@ class ChartReader extends \PhpOffice\PhpSpreadsheet\Reader\Xlsx\Chart
         $namespacesChartMeta = $chartElements->getNamespaces(true);
         $chartElementsC = $chartElements->children($namespacesChartMeta['c']);
 
-        $pivotChart =  new \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts\Chart($chartName, $parentChart->getTitle(), $parentChart->getLegend(), $parentChart->getPlotArea(), $parentChart->getPlotVisibleOnly(), $parentChart->getDisplayBlanksAs(), $parentChart->getXAxisLabel(), $parentChart->getYAxisLabel());
+        $pivotChart =  new \omnisoftory\PhpOffice\PhpSpreadsheet\Charts\Chart($chartName, $parentChart->getTitle(), $parentChart->getLegend(), $parentChart->getPlotArea(), $parentChart->getPlotVisibleOnly(), $parentChart->getDisplayBlanksAs(), $parentChart->getXAxisLabel(), $parentChart->getYAxisLabel());
         foreach ($chartElementsC as $chartElementKey => $chartElement) {
             switch ($chartElementKey) {
                 case 'pivotSource':

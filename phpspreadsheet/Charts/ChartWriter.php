@@ -1,6 +1,6 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Charts;
 
 use PhpOffice\PhpSpreadsheet\Chart\Layout;
 use PhpOffice\PhpSpreadsheet\Chart\Title;
@@ -19,7 +19,7 @@ class ChartWriter extends \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Chart
      *
      * @return string XML Output
      */
-    public function writeChart(\lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts\Chart $chart, $filename, $calculateCellValues = true)
+    public function writeChart(\omnisoftory\PhpOffice\PhpSpreadsheet\Charts\Chart $chart, $filename, $calculateCellValues = true)
     {
         $chartXml = parent::writeChart($chart,$calculateCellValues);
         if (!$chart->getHasPivotSource()) 

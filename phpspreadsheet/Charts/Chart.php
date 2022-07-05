@@ -1,6 +1,6 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Charts;
 
 use PhpOffice\PhpSpreadsheet\Chart\Axis;
 use PhpOffice\PhpSpreadsheet\Chart\DataSeries;

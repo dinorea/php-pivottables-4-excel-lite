@@ -1,18 +1,18 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use \PhpOffice\PhpSpreadsheet\NamedRange;
 use \PhpOffice\PhpSpreadsheet\Shared\Date;
 use \PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
 // use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Spreadsheet;
+use \omnisoftory\PhpOffice\PhpSpreadsheet\Spreadsheet;
 use \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use \PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
 //use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
 use PhpOffice;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
 
 class Workbook extends PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook
 {

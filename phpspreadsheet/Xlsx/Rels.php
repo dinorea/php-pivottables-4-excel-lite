@@ -1,16 +1,16 @@
 <?php
 
-namespace lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+namespace omnisoftory\PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 use PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Spreadsheet;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
 use PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
 use PhpOffice;
 // use PhpOffice\PhpSpreadsheet\Writer\Xlsx\WriterPart;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
-use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheDefinition;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
+use omnisoftory\PhpOffice\PhpSpreadsheet\Xlsx\PivotCacheRecords;
 
 require_once __DIR__ . "/../Spreadsheet.php";
 
