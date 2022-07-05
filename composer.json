@@ -1,5 +1,5 @@
 {
-	"name": "lyquidity/php-pivottables-4-excel-lite",
+	"name": "omnisoftory/php-pivottables-4-excel-lite",
 	"description": "Adds limited Excel pivot table functionality to PHPOffice/PHPSpreadsheet",
 	"keywords": [
 		"lyquidity",
@@ -11,7 +11,7 @@
 		"workbook"
 	],
 	"type": "library",
-	"homepage": "https://github.com/bseddon/php-pivottables-4-excel-lite",
+	"homepage": "https://github.com/lecors/php-pivottables-4-excel-lite",
 	"license": "GPL-3.0-only",
 	"authors": [
 		{
@@ -19,12 +19,6 @@
 			"homepage": "https://github.com/bseddon"
 		}
 	],
-	"repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com: lecors/php-pivottables-4-excel-lite"
-        }
-    ],
   "require": {
 		"php": ">7.0",
 		"pear/log": ">1.13",
@@ -35,8 +29,7 @@
 		"lib-libxml": "*",
 		"phpoffice/phpspreadsheet": "^1.5",
 		"lyquidity/utilities": "dev-master",
-		"lyquidity/xml": "dev-master",
-		"lecors/php-pivottables-4-excel-lite": "dev-master"
+		"lyquidity/xml": "dev-master"
 	},
 	"autoload": {
 		"files": [
