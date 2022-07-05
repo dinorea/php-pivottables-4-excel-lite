@@ -10,11 +10,11 @@ use \PhpOffice\PhpSpreadsheet\Shared\XMLWriter;
 use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Spreadsheet;
 use \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use \PhpOffice\PhpSpreadsheet\Writer\Exception as WriterException;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx\WriterPart;
+//use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook;
 use PhpOffice;
 use lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Xlsx\PivotTable;
 
-class Workbook extends WriterPart
+class Workbook extends PhpOffice\PhpSpreadsheet\Writer\Xlsx\Workbook
 {
     /**
      * Write workbook to XML format.

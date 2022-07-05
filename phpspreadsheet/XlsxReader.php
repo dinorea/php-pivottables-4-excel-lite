@@ -9,7 +9,13 @@ use \PhpOffice\PhpSpreadsheet\NamedRange;
 use \PhpOffice\PhpSpreadsheet\Reader\BaseReader;
 use \PhpOffice\PhpSpreadsheet\Reader\DefaultReadFilter;
 // use \PhpOffice\PhpSpreadsheet\Reader\Xlsx;
-use \PhpOffice\PhpSpreadsheet\Reader\Xlsx\Chart;
+//use \PhpOffice\PhpSpreadsheet\Reader\Xlsx\Chart;
+use \lyquidity\xbrl_validate\PhpOffice\PhpSpreadsheet\Charts\ChartReader;
+
+//require_once __DIR__ . "/Charts/Chart.php";
+require_once __DIR__ . "/Charts/ChartReader.php";
+//require_once __DIR__ . "/Charts/ChartWriter.php";
+
 use \PhpOffice\PhpSpreadsheet\Reader\Xlsx\Theme;
 use \PhpOffice\PhpSpreadsheet\ReferenceHelper;
 use \PhpOffice\PhpSpreadsheet\RichText\RichText;
@@ -126,7 +132,7 @@ class Xlsx extends BaseReader
      *
      * @return bool
      */
-    public function canRead($pFilename)
+    public function canRead($pFilename): bool
     {
         File::assertFile($pFilename);
 
@@ -446,10 +452,10 @@ class Xlsx extends BaseReader
      *
      * @return Spreadsheet
      */
-    public function load($pFilename)
+    public function load(string $pFilename, int $flags = 0): \PhpOffice\PhpSpreadsheet\Spreadsheet
     {
         File::assertFile($pFilename);
-
+        $this->processFlags($flags);
         // Initialisations
         $excel = new Spreadsheet();
         $excel->removeSheetByIndex(0);
@@ -2122,8 +2128,9 @@ class Xlsx extends BaseReader
                                 'SimpleXMLElement',
                                 Settings::getLibXmlLoaderOptions()
                             );
-                            $objChart = Chart::readChart($chartElements, basename($chartEntryRef, '.xml'));
-
+                            $objChart = ChartReader::readChart($chartElements, basename($chartEntryRef, '.xml'));
+                            //$objChart = Chart::readChart($chartElements, basename($chartEntryRef, '.xml'));
+                            
                             if (isset($charts[$chartEntryRef])) {
                                 $chartPositionRef = $charts[$chartEntryRef]['sheet'] . '!' . $charts[$chartEntryRef]['id'];
                                 if (isset($chartDetails[$chartPositionRef])) {
