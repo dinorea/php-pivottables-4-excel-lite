@@ -19,12 +19,6 @@
 			"homepage": "https://github.com/bseddon"
 		}
 	],
-	"repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com: lecors/php-pivottables-4-excel-lite"
-        }
-    ],
   "require": {
 		"php": ">7.0",
 		"pear/log": ">1.13",
