@@ -475,12 +475,15 @@ class Xlsx extends \PhpOffice\PhpSpreadsheet\Writer\Xlsx
                 $unparsedLoadedData = $this->spreadSheet->getUnparsedLoadedData();
                 if (isset($unparsedLoadedData['sheets'][$sheetCodeName]['ctrlProps'])) {
                     foreach ($unparsedLoadedData['sheets'][$sheetCodeName]['ctrlProps'] as $ctrlProp) {
-                        $zip->addFormattedXml($ctrlProp['filePath'], $ctrlProp['content']);
-                    }
+                        //$zip->addFormattedXml($ctrlProp['filePath'], $ctrlProp['content']);
+                        $zip->addFromString($ctrlProp['filePath'], $ctrlProp['content']);
+                    } 
                 }
                 if (isset($unparsedLoadedData['sheets'][$sheetCodeName]['printerSettings'])) {
                     foreach ($unparsedLoadedData['sheets'][$sheetCodeName]['printerSettings'] as $ctrlProp) {
-                        $zip->addFormattedXml($ctrlProp['filePath'], $ctrlProp['content']);
+                        //$zip->addFormattedXml($ctrlProp['filePath'], $ctrlProp['content']);
+                        $zip->addFromString($ctrlProp['filePath'], $ctrlProp['content']);
+                        
                     }
                 }
 
