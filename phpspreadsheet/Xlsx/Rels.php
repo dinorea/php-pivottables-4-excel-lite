@@ -201,7 +201,7 @@ class Rels extends PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels
      *
      * @return string XML Output
      */
-    public function writeWorksheetRelationships(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $pWorksheet, $pWorksheetId = 1, $includeCharts = false)
+    public function writeWorksheetRelationships(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $pWorksheet, $pWorksheetId = 1, $includeCharts = false, $tableRef = 1)
     {
         // Create XML writer
         $objWriter = null;
