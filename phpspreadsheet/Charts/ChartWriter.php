@@ -19,7 +19,7 @@ class ChartWriter extends \PhpOffice\PhpSpreadsheet\Writer\Xlsx\Chart
      *
      * @return string XML Output
      */
-    public function writeChart(\omnisoftory\PhpOffice\PhpSpreadsheet\Charts\Chart $chart, $filename, $calculateCellValues = true)
+    public function writeChart(\PhpOffice\PhpSpreadsheet\Charts\Chart $chart, $filename, $calculateCellValues = true)
     {
         $chartXml = parent::writeChart($chart,$calculateCellValues);
         if (!$chart->getHasPivotSource()) 
